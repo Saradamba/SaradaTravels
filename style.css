@@ -1,0 +1,619 @@
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f8fbff;
+    color:#333;
+}
+
+/* Navigation */
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    background:#0d47a1;
+}
+
+.logo{
+    color:white;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    font-size:17px;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#FFD54F;
+}
+
+.book-btn{
+    background:#ff9800;
+    color:white;
+    padding:10px 22px;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+}
+
+.book-btn:hover{
+    background:#fb8c00;
+}
+/* Hero Section */
+
+.hero{
+    height:90vh;
+    background:url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e") center/cover no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero-content{
+    background:rgba(0,0,0,0.55);
+    padding:50px;
+    border-radius:15px;
+    color:white;
+    max-width:700px;
+}
+
+.hero h1{
+    font-size:52px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:20px;
+    line-height:1.8;
+    margin-bottom:35px;
+}
+
+.hero-btn{
+    display:inline-block;
+    background:#ff9800;
+    color:white;
+    padding:15px 30px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+    margin:10px;
+}
+
+.hero-btn:hover{
+    background:#fb8c00;
+}
+
+.secondary-btn{
+    background:#1565c0;
+}
+
+.secondary-btn:hover{
+    background:#0d47a1;
+}
+/* Why Choose Us */
+
+.why-us{
+    padding:80px 8%;
+    background:#f4f8fc;
+    text-align:center;
+}
+
+.why-us h2{
+    font-size:40px;
+    margin-bottom:50px;
+    color:#0d47a1;
+}
+
+.card-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    margin-bottom:15px;
+    color:#1565c0;
+}
+
+.card p{
+    line-height:1.7;
+}
+/* Popular Destinations */
+
+.destinations{
+    padding:80px 8%;
+    text-align:center;
+    background:#ffffff;
+}
+
+.destinations h2{
+    font-size:40px;
+    color:#0d47a1;
+    margin-bottom:50px;
+}
+
+.destination-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.destination-card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.destination-card:hover{
+    transform:translateY(-8px);
+}
+
+.destination-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.destination-card h3{
+    margin:20px 0 10px;
+    color:#1565c0;
+}
+
+.destination-card p{
+    padding:0 20px 25px;
+    line-height:1.6;
+}
+/* Featured Packages */
+
+.packages{
+    background:#f5f9ff;
+    padding:80px 8%;
+    text-align:center;
+}
+
+.packages h2{
+    font-size:40px;
+    color:#0d47a1;
+    margin-bottom:50px;
+}
+
+.package-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.package-card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.package-card:hover{
+    transform:translateY(-8px);
+}
+
+.package-card h3{
+    color:#1565c0;
+    margin-bottom:15px;
+}
+
+.package-card p{
+    margin:12px 0;
+    line-height:1.6;
+}
+
+.package-btn{
+    display:inline-block;
+    margin-top:20px;
+    background:#ff9800;
+    color:white;
+    text-decoration:none;
+    padding:12px 25px;
+    border-radius:30px;
+    font-weight:bold;
+}
+
+.package-btn:hover{
+    background:#f57c00;
+}
+/* Customer Reviews */
+
+.reviews{
+    padding:80px 8%;
+    background:white;
+    text-align:center;
+}
+
+.reviews h2{
+    font-size:40px;
+    color:#0d47a1;
+    margin-bottom:50px;
+}
+
+.review-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.review-card{
+    background:#f7f9fc;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:.3s;
+}
+
+.review-card:hover{
+    transform:translateY(-8px);
+}
+
+.review-card h3{
+    color:#1565c0;
+    margin-bottom:10px;
+}
+
+.stars{
+    color:#ff9800;
+    font-size:22px;
+    margin-bottom:15px;
+}
+
+.review-card p{
+    line-height:1.7;
+}
+/* Travel Statistics */
+
+.stats{
+    padding:80px 8%;
+    background:#0d47a1;
+    color:white;
+    text-align:center;
+}
+
+.stats h2{
+    font-size:40px;
+    margin-bottom:50px;
+}
+
+.stats-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:30px;
+}
+
+.stat-box{
+    background:rgba(255,255,255,0.1);
+    padding:30px;
+    border-radius:15px;
+}
+
+.stat-box h3{
+    font-size:42px;
+    color:#FFD54F;
+    margin-bottom:10px;
+}
+
+.stat-box p{
+    font-size:18px;
+}
+/* About Page */
+
+.about{
+    padding:80px 10%;
+    text-align:center;
+}
+
+.about h1{
+    color:#0d47a1;
+    font-size:45px;
+    margin-bottom:30px;
+}
+
+.about p{
+    max-width:900px;
+    margin:20px auto;
+    line-height:1.8;
+    font-size:18px;
+}
+
+.mission{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+    padding:40px 10% 80px;
+}
+
+.mission-card{
+    background:white;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.mission-card h2{
+    color:#1565c0;
+    margin-bottom:20px;
+}
+
+.mission-card p{
+    line-height:1.7;
+}
+/* Packages Page */
+
+.package-page{
+    padding:80px 8%;
+    text-align:center;
+}
+
+.package-page h1{
+    font-size:45px;
+    color:#0d47a1;
+    margin-bottom:50px;
+}
+/* Gallery Page */
+
+.gallery-page{
+    padding:80px 8%;
+    text-align:center;
+}
+
+.gallery-page h1{
+    font-size:45px;
+    color:#0d47a1;
+    margin-bottom:20px;
+}
+
+.gallery-page p{
+    font-size:18px;
+    margin-bottom:40px;
+}
+
+.gallery-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.gallery-card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.gallery-card:hover{
+    transform:scale(1.03);
+}
+
+.gallery-card img{
+    width:100%;
+    height:240px;
+    object-fit:cover;
+}
+
+.gallery-card h3{
+    padding:18px;
+    color:#1565c0;
+}
+/* Contact Page */
+
+.contact-page{
+
+padding:80px 8%;
+
+text-align:center;
+
+}
+
+.contact-page h1{
+
+font-size:45px;
+
+color:#0d47a1;
+
+margin-bottom:20px;
+
+}
+
+.contact-page p{
+
+margin-bottom:40px;
+
+font-size:18px;
+
+}
+
+form{
+
+max-width:700px;
+
+margin:auto;
+
+display:flex;
+
+flex-direction:column;
+
+gap:20px;
+
+}
+
+input,
+select,
+textarea{
+
+padding:15px;
+
+font-size:16px;
+
+border:1px solid #ccc;
+
+border-radius:8px;
+
+}
+
+button{
+
+background:#ff9800;
+
+color:white;
+
+border:none;
+
+padding:15px;
+
+font-size:18px;
+
+border-radius:30px;
+
+cursor:pointer;
+
+}
+
+button:hover{
+
+background:#f57c00;
+
+}
+/* Footer */
+
+.footer{
+    background:#0d47a1;
+    color:white;
+    padding:50px 8% 20px;
+}
+
+.footer-content{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:40px;
+}
+
+.footer-section h3{
+    margin-bottom:15px;
+}
+
+.footer-section p{
+    margin:8px 0;
+    line-height:1.7;
+}
+
+.footer-section a{
+    color:white;
+    text-decoration:none;
+}
+
+.footer-section a:hover{
+    color:#FFD54F;
+}
+
+.footer hr{
+    margin:30px 0 15px;
+    border:1px solid rgba(255,255,255,.3);
+}
+
+.copyright{
+    text-align:center;
+}
+/* ===========================
+   Responsive Design
+=========================== */
+
+@media (max-width: 768px){
+
+    .navbar{
+        flex-direction:column;
+        gap:15px;
+        padding:20px;
+    }
+
+    .nav-links{
+        flex-direction:column;
+        gap:15px;
+        text-align:center;
+    }
+
+    .hero{
+        height:auto;
+        padding:80px 20px;
+    }
+
+    .hero h1{
+        font-size:34px;
+    }
+
+    .hero p{
+        font-size:18px;
+    }
+
+    .hero-btn{
+        display:block;
+        width:220px;
+        margin:15px auto;
+    }
+
+    .card-container,
+    .destination-container,
+    .package-container,
+    .review-container,
+    .stats-container,
+    .gallery-container,
+    .mission,
+    .footer-content{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .about h1,
+    .package-page h1,
+    .gallery-page h1,
+    .contact-page h1{
+
+        font-size:34px;
+
+    }
+
+    form{
+
+        width:100%;
+
+    }
+
+}
